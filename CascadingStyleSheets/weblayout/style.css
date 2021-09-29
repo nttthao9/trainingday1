@@ -1,0 +1,138 @@
+:root {
+  --main-color: white;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding-bottom: 2rem;
+}
+.wrapper {
+  width: 100%;
+}
+.container {
+  padding: 0 2rem;
+}
+.header {
+  margin-bottom: 3rem;
+  background-image: linear-gradient(to right bottom, #632553, #6e3747);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.logo {
+  background-color: #ad4191;
+  width: 2rem;
+  height: 2rem;
+}
+.logo-icon {
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  margin-right: 3rem;
+}
+.menu-link {
+  color: var(--main-color);
+  opacity: 0.8;
+  transition: opacity 0.25s linear;
+}
+.menu-link:hover {
+  opacity: 1;
+}
+.btn {
+  border: 1px solid currentColor;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: transparent; */
+  color: var(--main-color);
+}
+.header-main {
+  margin-top: 3rem;
+  display: flex;
+}
+.content,
+.main-image {
+  width: 50%;
+}
+.main-image {
+  height: 40rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.content-title {
+  font-family: sans-serif;
+  color: var(--main-color);
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.content-desc {
+  color: var(--main-color);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+.btn-green {
+  border: 0;
+  background-color: #09bc52;
+  text-transform: capitalize;
+}
+.catalog-list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 1rem 1rem;
+}
+.catalog-title {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.image-item {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+}
